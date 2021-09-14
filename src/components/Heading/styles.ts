@@ -10,13 +10,13 @@ interface IHeadingProps {
 }
 
 export const SecondLvlHeading = styled.h2<IHeadingProps>`
+  color: ${(props) => props.theme.headingColor};
   font-size: ${({ fontSize = 40 }) => fontSize}px;
   margin-top: ${({ marginTop = 20 }) => marginTop}px;
   margin-bottom: ${({ marginBottom = 30 }) => marginBottom}px;
   margin-left: ${({ marginLeft = 0 }) => marginLeft}px;
   text-align: ${({ textAlign = "center" }) => textAlign};
   width: ${({ width = "100%" }) => width};
-  color: ${(props) => props.theme.headingColor};
   display: inline-block;
   font-style: normal;
   font-weight: bold;

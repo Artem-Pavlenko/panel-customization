@@ -1,5 +1,7 @@
+export * from "./BlockWrapper";
 export * from "./Button";
 export * from "./ColorPicker";
+export * from "./ColorsCustomization";
 export * from "./CustomizationSection";
 export * from "./FieldHeading";
 export * from "./Img";
