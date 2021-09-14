@@ -8,3 +8,4 @@ export * from "./Img";
 export * from "./Input";
 export * from "./Text";
 export * from "./Heading";
+export * from "./UploadLogo";

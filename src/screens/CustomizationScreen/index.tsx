@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import ICustomizationScreenProps from "./props";
 import { Wrapper } from "./styles";
-import { ColorsCustomization, Heading } from "../../components";
+import { ColorsCustomization, Heading, UploadLogo } from "../../components";
 
 export const CustomizationScreen: FC<ICustomizationScreenProps> = () => (
   <Wrapper>
@@ -15,5 +15,6 @@ export const CustomizationScreen: FC<ICustomizationScreenProps> = () => (
     />
 
     <ColorsCustomization />
+    <UploadLogo />
   </Wrapper>
 );

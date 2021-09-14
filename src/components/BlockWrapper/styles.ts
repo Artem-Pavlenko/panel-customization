@@ -11,4 +11,6 @@ export const Block = styled.div`
   box-sizing: border-box;
   border-radius: 10px;
   padding: 30px;
+  margin: 0 15px 15px 0;
+  box-shadow: 0px 2px 8px ${colors.GRAY}1A;
 `;

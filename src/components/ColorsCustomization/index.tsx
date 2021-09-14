@@ -3,7 +3,7 @@ import { ChangeEvent, FC } from "react";
 
 import IColorsCustomizationProps from "./props";
 import { useDispatch, useSelector } from "react-redux";
-import { BlockWrapper, Button, CustomizationSection } from "..";
+import { BlockWrapper, Button, CustomizationSection, Text } from "..";
 import { ButtonStylePreset } from "../../utils/types";
 import {
   resetTheme,
@@ -17,6 +17,7 @@ import {
   PANEL_FONT,
 } from "../../redux/customization/constants";
 import { customizationSelector } from "../../redux/customization/selectors";
+import { colors } from "../../utils/colors";
 
 export const ColorsCustomization: FC<IColorsCustomizationProps> = () => {
   const defaultTheme = useSelector(customizationSelector);
@@ -43,6 +44,7 @@ export const ColorsCustomization: FC<IColorsCustomizationProps> = () => {
 
   return (
     <BlockWrapper>
+      <Text color={colors.MARINER}>Colors customization</Text>
       <CustomizationSection
         name={BACKGROUND}
         value={values[BACKGROUND]}
