@@ -1,1 +1,1 @@
-export * from "./PersonalCustomizationScreen";
+export * from "./CustomizationScreen";

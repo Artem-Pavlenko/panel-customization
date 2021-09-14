@@ -4,7 +4,7 @@ import { Route, Switch } from "react-router";
 import { ThemeProvider } from "styled-components";
 
 import { customizationSelector } from "./redux/customization/selectors";
-import { PersonalCustomizationScreen } from "./screens";
+import { CustomizationScreen } from "./screens/CustomizationScreen";
 
 function App() {
   const defaultTheme = useSelector(customizationSelector);
@@ -20,7 +20,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Switch>
-        <Route exact path="/" render={() => <PersonalCustomizationScreen />} />
+        <Route exact path="/" render={() => <CustomizationScreen />} />
       </Switch>
     </ThemeProvider>
   );
